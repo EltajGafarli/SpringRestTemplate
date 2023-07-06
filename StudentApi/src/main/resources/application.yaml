@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  liquibase:
+    enabled: false
+  datasource:
+    username: root
+    password: 190407011
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/service1
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  level:
+    root: warn
+    sql: trace
+    web: warn
+server:
+  port: 8082
